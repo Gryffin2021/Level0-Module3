@@ -13,7 +13,30 @@ def get_random_color():
 if __name__ == '__main__':
     window = turtle.Screen()
     window.bgcolor('white')
-
+    timmy = turtle.Turtle()
+    timmy.pendown()
+    timmy.speed(0)
+    inf = 100
+    timmy.pensize(10)
+    for i in range(inf + 1):
+        inf = i
+        for j in range(360):
+            timmy.forward(1)
+            timmy.left(1)
+        color = simpledialog.askstring(title="Color Picker (super)",prompt="What color would you like to use? (red) (blue) (green) (random)")
+        if color == "red":
+            timmy.pencolor(color)
+        elif color == "blue":
+            timmy.pencolor(color)
+        elif color == "green":
+            timmy.pencolor(color)
+        elif color == "super":
+            for k in range(360):
+                timmy.pencolor(get_random_color())
+                timmy.forward(1)
+                timmy.left(1)
+        else:
+            timmy.pencolor(get_random_color())
     # TODO 1) Create a new Turtle
     #      2) Make the turtle draw a shape (this will take more than one line
     #         of code)
