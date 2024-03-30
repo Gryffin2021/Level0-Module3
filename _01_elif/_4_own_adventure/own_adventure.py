@@ -46,7 +46,7 @@ if __name__ == '__main__':
         messagebox.showinfo(title="Outcome", message="You witness Pink kill Green!")
         messagebox.showinfo(title="Outcome", message="Pink hops in a vent.")
         messagebox.showinfo(title="Outcome", message="You report the body and meet everyone in Cafeteria. You inform them of what you saw. Unfortunately, some of the crowd may take some convincing.")
-        m = simpledialog.askstring(title="Be convincing!", prompt="Convince them: (Vote pink! If pink is not the imposter vote me!) (I saw it happen though!) (Y'all are stupid) (Pink sus)")
+        m = simpledialog.askstring(title="Be convincing!", prompt="Convince them: (Vote Pink! If Pink is not the imposter vote me!) (I saw it happen though!) (Y'all are stupid) (Pink sus)")
         if m == "Vote pink! If pink is not the imposter vote me!":
             messagebox.showinfo(title="Outcome", message="The crowd considers your offer...")
             messagebox.showinfo(title="Outcome", message="Pink is ejected.")
